@@ -1,14 +1,12 @@
 "use client"
 import React, { useRef } from 'react'
 import { useState } from 'react'
-import Link from 'next/link';
-
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import emailjs from '@emailjs/browser';
 
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger,} from "@/components/ui/accordion"
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger,} from "@/components/ui/tooltip"
-import { ChevronDown, Clipboard, ClipboardCheck, Linkedin, Download,  CircleAlert } from "lucide-react"
+import { ChevronDown, Clipboard, ClipboardCheck, Linkedin, Download } from "lucide-react"
 
  
 
@@ -75,8 +73,8 @@ const Contactpage = () => {
                  <div className=" gap-4 rounded-lg h-auto w-[12rem] sm:w-[27rem] md:w-[30rem] lg:w-[37rem] xl:w-[40rem] grid grid-col-4 "> 
                  <div className="rounded-lg h-auto grid items-center col-start- row-start-2 col-span-4 sm:col-span-3 sm:row-start-1 p-3 ">
                     <h1 className=' text-[18px] text-white font-bold pt-'>Need a professional website?</h1>
-                    <p className=' text-[10px] text-white font-light p-1'>Ready to bring your ideas to life online? Let's build your dream website together! 
-                        Whether you're starting from scratch or looking to revamp your current site, I'm here to help. 
+                    <p className=' text-[10px] text-white font-light p-1'>Ready to bring your ideas to life online? Let`s build your dream website together! 
+                        Whether you`re starting from scratch or looking to revamp your current site, I`m here to help. 
                         Contact me today to discuss your project and take the first step towards an impactful online presence.
                     </p> 
                  </div>

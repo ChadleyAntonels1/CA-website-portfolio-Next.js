@@ -144,13 +144,13 @@ const Homepage = () => {
                  <div className=" gap-4 rounded-lg h-auto w-[12rem] sm:w-[27rem] md:w-[30rem] lg:w-[37rem] xl:w-[40rem] grid grid-col-4 justify">
                   <div className="bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto grid row-start-1 col-span-4 p-3 sm:p-10">
                     <h1 className=" text-white font-extrabold text-[12px] pb-2">
-                      Ready to connect? Reach out to me today and let's discuss how I can help you achieve your goals.
+                      Ready to connect? Reach out to me today and let`s discuss how I can help you achieve your goals.
                     </h1>
                   </div>               
 
                   <div className=" bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto grid col-start-1 row-start-2 col-span-2 p-3">
                         <p className=" text-white font-regular text-start text-[10px] mb-3">
-                        Open the Door to Possibilities, Reach Out and Let's Collaborate on Your Vision!                        
+                        Open the Door to Possibilities, Reach Out and Let`s Collaborate on Your Vision!                        
                         </p>
                         <div className="h-auto grid justify-items-start ">
                           <Link className="bg-white text-black font-regular grid items-center justify-center text-xs min-w-[25px] min-h-[25px] rounded-lg" 

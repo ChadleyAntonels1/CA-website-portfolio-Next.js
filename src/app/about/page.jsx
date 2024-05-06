@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import Link from 'next/link'  
 import {motion } from "framer-motion"
 
 const cardVariants= {
@@ -35,8 +34,8 @@ const Aboutpage = () => {
                  <div className=" bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto grid items-center col-start- row-start-2 col-span-4 sm:col-span-3 sm:row-start-1 p-3">
                     <h1 className=' text-[18px] font-bold pt-'>Chadley Antonels</h1>
                     <h1 className=' text-[14px] font-bold text-blue-400'>Frontend Web Developer</h1>
-                    <p className=' text-[10px] text-white font-light p-1'>Ready to bring your ideas to life online? Let's build your dream website together! 
-                      Whether you're starting from scratch or looking to revamp your current site, I'm here to help. 
+                    <p className=' text-[10px] text-white font-light p-1'>Ready to bring your ideas to life online? Let`s build your dream website together! 
+                      Whether you`re starting from scratch or looking to revamp your current site, I`m here to help. 
                       Contact me today to discuss your project and take the first step towards an impactful online presence.
                     </p> 
                  </div>
@@ -54,7 +53,7 @@ const Aboutpage = () => {
             <div className=" bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto grid items-center col-start- row-start-2 col-span-4 sm:col-span-3 sm:row-start-1 p-3">
               <h1 className=' text-[14px] font-bold mb-1'>Background</h1>
               <p className=' text-[10px] font-light'>
-                As an inspired entry-level frontend web developer, I'm a driven creator with a passion for turning code into visually appealing interfaces. 
+                As an inspired entry-level frontend web developer, I`m a driven creator with a passion for turning code into visually appealing interfaces. 
                 I adapt easily to changes, using effective communication and creative problem-solving . 
                 I am passionate about driving results and making a meaningful impact, with a collaborative mindset and a commitment to continuous learning, I am eager to contribute my skills and 
                 insights to thrive in a dynamic and innovative environment. 
