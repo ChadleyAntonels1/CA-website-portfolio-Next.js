@@ -16,11 +16,11 @@ import {
 } from "@/components/ui/carousel"
 
 
-// export const metadata = {
-//   title:" About Page" ,
-//   description:"This is the about page of Chadley Antonels porfolio",
+ export const metadata = {
+   title:" About Page" ,
+   description:"This is the about page of Chadley Antonels porfolio",
 
-// }
+ }
 
 const cardVariants= {
   offscreen: {
