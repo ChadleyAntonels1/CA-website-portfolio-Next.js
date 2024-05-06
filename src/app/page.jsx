@@ -1,14 +1,26 @@
 "use client"
-import Spline from "@splinetool/react-spline";
+import React from 'react'
 import Link from "next/link";
-import {motion, } from "framer-motion"
 import Image from "next/image";
 
-export const metadata = {
-  title:" About Page" ,
-  description:"This is the about page of Chadley Antonels porfolio",
+import Spline from "@splinetool/react-spline";
+import {motion, } from "framer-motion"
+import { ChevronRight } from 'lucide-react';
+import Autoplay from "embla-carousel-autoplay"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
-}
+
+// export const metadata = {
+//   title:" About Page" ,
+//   description:"This is the about page of Chadley Antonels porfolio",
+
+// }
 
 const cardVariants= {
   offscreen: {
@@ -22,13 +34,20 @@ const cardVariants= {
       bounce: 0.4,
       duration: 5,
       
+      
     },
+    whileInView: 1
     
     
   }
 };
 
 const Homepage = () => {
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: true })
+  )
+
   return  <div className="">
 {/* spline animation */}
             <div>
@@ -87,7 +106,29 @@ const Homepage = () => {
                  </div>
 
                  <div className=" bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto justify-center grid row-start-3 col-span-4 p-3 ">
-                 <Image src='/Untitledas.png' alt="" width={150} height={1500}  className=" rounded-lg"/>
+                 <Carousel className=" "
+                           plugins={[plugin.current]}
+                            >
+                    <CarouselContent>
+                        <CarouselItem >
+                              <Image src='/UntitledSCREENBLOG (3).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                        </CarouselItem>
+                        <CarouselItem >
+                          <Image src='/UntitledSCREENBLOG (1).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                    </CarouselItem>
+                    <CarouselItem >
+                          <Image src='/UntitledSCREENBLOG (2).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                    </CarouselItem>
+                    <CarouselItem >
+                          <Image src='/UntitledSCREENBLOG (4).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                    </CarouselItem>
+                    <CarouselItem >
+                          <Image src='/UntitledSCREENBLOG.png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                    </CarouselItem>
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                  </Carousel>
 
                   </div>
                  </div>
@@ -109,12 +150,14 @@ const Homepage = () => {
 
                   <div className=" bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto grid col-start-1 row-start-2 col-span-2 p-3">
                         <p className=" text-white font-regular text-start text-[10px] mb-3">
-                          With over 2 years of experience, I specialize in creating visually stunning and user-friendly websites.
+                        Open the Door to Possibilities, Reach Out and Let's Collaborate on Your Vision!                        
                         </p>
                         <div className="h-auto grid justify-items-start ">
-                          <Link className="bg-white text-black font-regular grid items-center text-xs min-w-[25px] min-h-[25px] rounded-lg" href="/about">L</Link>
+                          <Link className="bg-white text-black font-regular grid items-center justify-center text-xs min-w-[25px] min-h-[25px] rounded-lg" 
+                                href="/contact">
+                           <ChevronRight className="w-5 h-5 "/>
+                          </Link>
                         </div>
-                    
                  </div>
 
                  <div className=" bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto grid col-start-3 row-start-2 col-span-2 p-3 ">
@@ -122,12 +165,12 @@ const Homepage = () => {
                           With over 2 years of experience, I specialize in creating visually stunning and user-friendly websites.
                         </p>
                         <div className="h-auto grid justify-items-start ">
-                          <Link className="bg-white text-black font-regular grid items-center text-xs min-w-[25px] min-h-[25px] rounded-lg" href="/about">L</Link>
-                        </div>
-                    
+                          <Link className="bg-white text-black font-regular grid items-center justify-center text-xs min-w-[25px] min-h-[25px] rounded-lg" 
+                                href="/about">
+                           <ChevronRight className="w-5 h-5 "/>
+                          </Link>
+                        </div>   
                  </div>
-
-                 
                  </div>
               </motion.div>
 

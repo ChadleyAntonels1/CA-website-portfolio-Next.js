@@ -16,12 +16,12 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="w-full h-full bg-zinc-950">
           <div className="h-20">
-          <Navbar/>
+          <Navbar />
           </div>
-          <div className="w-[calc{100vh-6rem}]">
+          <div className="w-[calc{100vh-6rem}] ">
           {children}
           </div>
-          <div className="h-20">
+          <div >
           <Footer/>
           </div>
       </div>

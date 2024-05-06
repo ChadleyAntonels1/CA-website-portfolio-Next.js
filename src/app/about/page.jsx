@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import Link from 'next/link'
+import Link from 'next/link'  
 import {motion } from "framer-motion"
 
 const cardVariants= {
@@ -21,7 +21,7 @@ const cardVariants= {
 
 const Aboutpage = () => {
   return (
-    <div className='text-white'>
+    <div className='text-white mt-10'>
 {/* profile image */}
           <motion.div variants={cardVariants}
                                 initial="offscreen"
