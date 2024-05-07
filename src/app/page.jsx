@@ -14,7 +14,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
- 
 
 const cardVariants= {
   offscreen: {
@@ -27,7 +26,6 @@ const cardVariants= {
       type: "spring",
       bounce: 0.4,
       duration: 5,
-      
       
     },
     whileInView: 1
@@ -45,7 +43,8 @@ const Homepage = () => {
   return  <div className="">
 {/* spline animation */}
             <div>
-              <Spline scene="https://prod.spline.design/Y0HqeaPUaViMHRdq/scene.splinecode" />
+              <Spline scene="https://prod.spline.design/Y0HqeaPUaViMHRdq/scene.splin\]
+              ecode" />
               
 {/* hero 1*/}
                 <motion.div   variants={cardVariants}
@@ -170,8 +169,6 @@ const Homepage = () => {
 
           </div>
           </div>;
-
-
   
 };
 
