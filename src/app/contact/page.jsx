@@ -38,6 +38,11 @@ const Contactpage = () => {
    const [success, setSuccess] = useState(false)
    const [error, setError] = useState(false)
 
+   const service= process.env.NEXT_PUBLIC_SERVICE_ID;
+   const temp_id= process.env.NEXT_PUBLIC_TEMPLATE_ID;
+   const key= process.env.NEXT_PRIVATE_KEY;
+
+
    const form = useRef();
 
    const sendEmail = (e) => {
@@ -46,9 +51,9 @@ const Contactpage = () => {
     setSuccess(false);
 
     emailjs
-.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, 
-                process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
-                privateKey: process.env.NEXT_PRIVATE_KEY,
+.sendForm(service, 
+                temp_id, form.current, {
+                privateKey: key,
       })
       .then(
         (success) => {
