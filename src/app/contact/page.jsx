@@ -40,7 +40,7 @@ const Contactpage = () => {
 
    const service= process.env.NEXT_PUBLIC_SERVICE_ID;
    const temp_id= process.env.NEXT_PUBLIC_TEMPLATE_ID;
-   const key= process.env.NEXT_PRIVATE_KEY;
+   const key= process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
 
    const form = useRef();
