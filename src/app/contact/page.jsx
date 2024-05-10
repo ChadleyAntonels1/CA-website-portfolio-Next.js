@@ -46,9 +46,9 @@ const Contactpage = () => {
     setSuccess(false);
 
     emailjs
-.sendForm(process.env.NEXT_SERVICE_ID, 
-                process.env.NEXT_TEMPLATE_ID, form.current, {
-                publicKey: process.env.NEXT_PUBLIC_KEY,
+.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, 
+                process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
+                privateKey: process.env.NEXT_PRIVATE_KEY,
       })
       .then(
         (success) => {
