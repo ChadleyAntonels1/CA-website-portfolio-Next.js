@@ -43,8 +43,8 @@ const Homepage = () => {
   return  <div className="">
 {/* spline animation */}
             <div>
-              <Spline scene="https://prod.spline.design/Y0HqeaPUaViMHRdq/scene.splin\]
-              ecode" />
+            <Spline scene="https://prod.spline.design/Y0HqeaPUaViMHRdq/scene.splinecode" />
+
               
 {/* hero 1*/}
                 <motion.div   variants={cardVariants}

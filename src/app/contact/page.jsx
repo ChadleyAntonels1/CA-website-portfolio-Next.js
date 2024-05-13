@@ -40,7 +40,9 @@ const Contactpage = () => {
 
    const service= process.env.NEXT_PUBLIC_SERVICE_ID;
    const temp_id= process.env.NEXT_PUBLIC_TEMPLATE_ID;
-   const key= process.env.NEXT_PUBLIC_PUBLIC_KEY;
+
+
+
 
 
    const form = useRef();
@@ -53,7 +55,7 @@ const Contactpage = () => {
     emailjs
 .sendForm(service, 
                 temp_id, form.current, {
-                privateKey: key,
+                publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY
       })
       .then(
         (success) => {
