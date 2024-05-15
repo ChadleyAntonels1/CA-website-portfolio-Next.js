@@ -42,7 +42,7 @@ const Homepage = () => {
 
   return  <div className="">
 {/* spline animation */}
-            <div>
+            <div >
             <Spline scene="https://prod.spline.design/Y0HqeaPUaViMHRdq/scene.splinecode" />
 
               
@@ -102,21 +102,31 @@ const Homepage = () => {
                  <Carousel className=" "
                            plugins={[plugin.current]}
                             >
-                    <CarouselContent>
+                     <CarouselContent>
                         <CarouselItem >
-                              <Image src='/UntitledSCREENBLOG (3).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                          <a target='_blank' href="https://next14-starter-two.vercel.app/">
+                            <Image src='/UntitledSCREENBLOG (3).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                          </a>
                         </CarouselItem>
                         <CarouselItem >
-                          <Image src='/UntitledSCREENBLOG (1).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                        <a target='_blank' href="https://next14-starter-two.vercel.app/">
+                            <Image src='/UntitledSCREENBLOG (1).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                          </a>
                     </CarouselItem>
                     <CarouselItem >
-                          <Image src='/UntitledSCREENBLOG (2).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                    <a target='_blank' href="https://next14-starter-two.vercel.app/">
+                            <Image src='/UntitledSCREENBLOG (2).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                          </a>
                     </CarouselItem>
                     <CarouselItem >
-                          <Image src='/UntitledSCREENBLOG (4).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                    <a target='_blank' href="https://next14-starter-two.vercel.app/">
+                            <Image src='/UntitledSCREENBLOG (4).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                          </a>
                     </CarouselItem>
                     <CarouselItem >
-                          <Image src='/UntitledSCREENBLOG.png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                    <a target='_blank' href="https://next14-starter-two.vercel.app/">
+                            <Image src='/UntitledSCREENBLOG.png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                          </a>
                     </CarouselItem>
                     </CarouselContent>
                     <CarouselPrevious />

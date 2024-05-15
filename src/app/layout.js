@@ -10,6 +10,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </head>
+
       <body className={inter.className}>
         <div className="w-full h-full bg-zinc-950">
           <div className="h-20">

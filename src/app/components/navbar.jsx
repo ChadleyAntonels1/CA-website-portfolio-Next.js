@@ -73,10 +73,8 @@ const Navbar = () => {
     <div  className="h-full flex items-center justify-between px-8 sm:px-8 md:px-36 lg:px-56 xl:px-96 text-md">
         {/* LOGO */}
         <div className=' lg:flex justify-start'> 
-            <Link href='/' className='text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center'>
-                <span className='text-white mr-1'>Chadley</span>
-                <span className='w-18 h-6 rounded text-black bg-white flex px-1 items-center justify-center'>Antonels</span>
-
+            <Link href='/' className='p-1 text-white font-semibold flex items-center justify-center'>
+                <div className='text-[20px] pt-5'>Chadley Antonels</div>
             </Link>
         </div>
         {/* NAVIGATION LINKS */}
