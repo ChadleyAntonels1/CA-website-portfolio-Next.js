@@ -74,7 +74,7 @@ const Navbar = () => {
         {/* LOGO */}
         <div className=' lg:flex justify-start'> 
             <Link href='/' className='p-1 text-white font-semibold flex items-center justify-center'>
-                <div className='text-[20px] pt-5'>Chadley Antonels</div>
+                <div className='text-[20px]'>Chadley Antonels</div>
             </Link>
         </div>
         {/* NAVIGATION LINKS */}
@@ -85,7 +85,7 @@ const Navbar = () => {
         </div>     
 
         {/* RESPONSIVE MENU */}
-        <div className='md:hidden'> 
+        <div className='md:hidden '> 
         {/* button MENU */}
         <button className='w-10 h-8 flex flex-col justify-between z-50 relative' onClick={(()=>setOpen((!open)))}>
             <motion.div variants={topVarients} 
@@ -104,9 +104,11 @@ const Navbar = () => {
         </button>
         {/* Menu List */}
         { open && (
-            <div id='nav' className='absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl'>
+            <div id='nav' className='absolute z-10 top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl'>
                 {links.map(link=>(
-                    <Link onClick={()=> setOpen(false)} href={link.url} key={link.title}>{link.title}</Link>
+                    <Link onClick={()=> setOpen(false)} href={link.url} key={link.title}>
+                        <NavLink link={link} key={link.title}/>
+                    </Link>
                 ))}
             </div>
                   )}

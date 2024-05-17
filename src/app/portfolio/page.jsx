@@ -19,7 +19,8 @@ const Portfoliopage = () => {
   )
   
   return (
-    <div className=" flex flex-col items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-36 mt-10">
+    <div>
+    <div className=" grid gap-6 justify-items-center items-center text-center ">
                  <div className=" text-center gap-4 rounded-lg h-auto w-[12rem] sm:w-[27rem] md:w-[30rem] lg:w-[37rem] xl:w-[40rem] grid grid-col-4">
                   <div className=" h-auto grid row-start-1 col-span-4 p-3 sm:p-10">
                     <h1 className=" text-white font-extrabold text-[12px] p-3">
@@ -36,9 +37,12 @@ const Portfoliopage = () => {
                  </div>
                 
                  
-                 </div>
+                 </div> 
+              </div>  
+              
+              <div className=" grid gap-6 justify-items-center items-center text-center ">
 
-                 <div className=" gap-4 rounded-lg h-auto w-[12rem] sm:w-[27rem] md:w-[30rem] lg:w-[37rem] xl:w-[40rem] grid grid-col-4">
+              <div className=" gap-4 rounded-lg h-auto w-[12rem] sm:w-[27rem] md:w-[30rem] lg:w-[37rem] xl:w-[40rem] grid grid-col-4">
                                  
 
                  <div className=" bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto grid justify-center col-start-1 row-start-2 col-span-2 p-3 ">
@@ -50,7 +54,11 @@ const Portfoliopage = () => {
                  </div>
                 
                  </div>
+                 </div>
 
+
+
+                 <div className=" grid gap-6 justify-items-center items-center text-center">
                  <div className=" text-center gap-4 mt-4 rounded-lg w-[12rem] sm:w-[27rem] md:w-[30rem] lg:w-[37rem] xl:w-[40rem] grid grid-col-4 justify-center">
 
                  <div className="bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg grid row-start-1 col-span-4 p-3 sm:p-10">
@@ -58,7 +66,7 @@ const Portfoliopage = () => {
                  <Carousel className=" "
                            plugins={[plugin.current]}
                             >
-                    <CarouselContent>
+                    <CarouselContent className=''>
                         <CarouselItem >
                           <a target='_blank' href="https://next14-starter-two.vercel.app/">
                             <Image src='/UntitledSCREENBLOG (3).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
@@ -90,11 +98,11 @@ const Portfoliopage = () => {
                   </Carousel>
                   </div>
                   </div>
-                  
+              </div>
+              </div>
 
 
-
-    </div>
+    
   )
 }
 

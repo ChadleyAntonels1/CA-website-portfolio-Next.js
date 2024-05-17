@@ -42,7 +42,7 @@ const Homepage = () => {
 
   return  <div className="">
 {/* spline animation */}
-            <div >
+            <div className=''>
             <Spline scene="https://prod.spline.design/Y0HqeaPUaViMHRdq/scene.splinecode" />
 
               
@@ -91,21 +91,23 @@ const Homepage = () => {
                   </div>               
 
                  <div className=" bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto grid justify-center col-start-1 row-start-2 col-span-2 p-3 ">
-                    <Image src='/Untitledas.png' alt="" width={100} height={1000}  className="w-fill h-fill rounded-lg"/>
+                    <a target='_blank' href="https://expensetracker-chadleyantonels1s-projects.vercel.app/">
+                        <Image src='/Untitledas.png' alt="" width={100} height={1000}  className="w-fill h-fill rounded-lg"/>
+                    </a>                 
                  </div>
 
                  <div className="  bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto grid justify-center col-start-3 row-start-2 col-span-2 p-3  ">
                  <Image src='/Untitledas.png' alt="" width={100} height={100}  className="w-fill h-fill rounded-lg"/>
                  </div>
 
-                 <div className=" bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto justify-center grid row-start-3 col-span-4 p-3 ">
+                 <div className=" bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto justify-center grid row-start-3 col-span-4 p-3 sm:p-10">
                  <Carousel className=" "
                            plugins={[plugin.current]}
                             >
-                     <CarouselContent>
+                     <CarouselContent >
                         <CarouselItem >
                           <a target='_blank' href="https://next14-starter-two.vercel.app/">
-                            <Image src='/UntitledSCREENBLOG (3).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
+                            <Image src='/UntitledSCREENBLOG (3).png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg "/>
                           </a>
                         </CarouselItem>
                         <CarouselItem >
@@ -152,7 +154,7 @@ const Homepage = () => {
                   </div>               
 
                   <div className=" bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto grid col-start-1 row-start-2 col-span-2 p-3">
-                        <p className=" text-white font-regular text-start text-[10px] mb-3">
+                        <p className=" text-white font-regular text-start text-[10px] mb-7">
                         Open the Door to Possibilities, Reach Out and Let`s Collaborate on Your Vision!                        
                         </p>
                         <div className="h-auto grid justify-items-start ">
