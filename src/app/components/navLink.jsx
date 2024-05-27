@@ -12,7 +12,7 @@ const NavLink = ({link}) => {
   console.log(pathName)
 
   return (
-    <Link className={` rounded p-1 ${pathName === link.url && 'px-2 underline underline-offset-8 decoration-blue-500 text-white text-md'}`} href={link.url}>{link.title}</Link>
+    <Link className={` rounded p-1 ${pathName === link.url && 'px-2 underline underline-offset-8 decoration-violet text-white text-md'}`} href={link.url}>{link.title}</Link>
   )
 }
 

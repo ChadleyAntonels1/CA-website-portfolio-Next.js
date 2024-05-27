@@ -11,15 +11,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/UntitledCA LOGO (1).png " />
       </head>
 
       <body className={inter.className}>
-        <div className="w-full h-full bg-zinc-950">
-          <div className="h-20">
+        <div className="w-full h-full bg-black">
+          <div className="h-20 ">
           <Navbar />
           </div>
-          <div className="w-[calc{100vh-6rem}] ">
+          <div className="w-[calc{100vh-6rem}]  ">
           {children}
           <Analytics/>
           <SpeedInsights/>

@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import NavLink from "./navLink";
-import { motion } from "framer-motion"
+import { AnimatePresence, motion, useCycle } from "framer-motion"
+import Image from 'next/image';
 
 
 const links = 
@@ -68,24 +69,46 @@ const Navbar = () => {
         }
     }
 
+    const itemVariants = {
+        closed: {
+          opacity: 0
+        },
+        open: { opacity: 1 }
+      };
+      const sideVariants = {
+        closed: {
+          transition: {
+            staggerChildren: 0.2,
+            staggerDirection: -1
+          }
+        },
+        open: {
+          transition: {
+            staggerChildren: 0.2,
+            staggerDirection: 1
+          }
+        }
+      };
 
   return (
-    <div  className="h-full flex items-center justify-between px-8 sm:px-8 md:px-36 lg:px-56 xl:px-96 text-md">
+    <div  className="h-full flex items-center justify-between px-5 lg:px-8 xl:px-14 text-md ">
         {/* LOGO */}
         <div className=' lg:flex justify-start'> 
             <Link href='/' className='p-1 text-white font-semibold flex items-center justify-center'>
-                <div className='text-[20px]'>Chadley Antonels</div>
+                <div className=' text-[20px]'>
+                    <Image src='/UntitledCA LOGO (1).png' width={70} height={36}/>
+                </div>
             </Link>
         </div>
         {/* NAVIGATION LINKS */}
-        <div className="hidden md:flex gap-6 text-white" >
+        <div className="hidden lg:flex gap-20 text-white" >
             {links.map(link=>(
                 <NavLink link={link} key={link.title}/>
             ))}
         </div>     
 
         {/* RESPONSIVE MENU */}
-        <div className='md:hidden '> 
+        <div className='lg:hidden  '> 
         {/* button MENU */}
         <button className='w-10 h-8 flex flex-col justify-between z-50 relative' onClick={(()=>setOpen((!open)))}>
             <motion.div variants={topVarients} 
@@ -103,15 +126,46 @@ const Navbar = () => {
             </motion.div>
         </button>
         {/* Menu List */}
+
+        <AnimatePresence>
         { open && (
-            <div id='nav' className='absolute z-10 top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl'>
+
+            <motion.aside
+            initial={{ width: 1000 }}
+            animate={{
+              width: 0,
+              transition: {  duration: 2 },
+              
+            }}
+            exit={{
+              width: 0,
+              transition: { delay: 0.7, duration: 0.3 }
+            }}
+          >
+            <motion.div
+              className="container"
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={sideVariants}
+            >
+            <div id='nav' className='absolute z-10 top-0 left-0 w-screen h-full bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl'>
                 {links.map(link=>(
+                    <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    variants={itemVariants}
+                  >
                     <Link onClick={()=> setOpen(false)} href={link.url} key={link.title}>
                         <NavLink link={link} key={link.title}/>
                     </Link>
+                    </motion.a>
                 ))}
             </div>
+            </motion.div>
+            </motion.aside>
                   )}
+            </AnimatePresence>
+
         </div>
 
     </div>

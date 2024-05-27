@@ -1,11 +1,15 @@
 import { Linkedin, Github } from 'lucide-react'
+import Image from 'next/image'
 import React from 'react'
 
 const Footer = () => {
   return (
-    <div  className="h-full flex  justify-between px-8 mt-10 sm:px-8 md:px-36 lg:px-56 xl:px-80 text-md border-t text-white"> 
+    <div  className=" h-full flex items-center justify-between px-5 lg:px-8 xl:px-14 text-md border-t text-white"> 
         <div className=' '>
-          <div className='text-[20px] pt-5'>Chadley Antonels</div>
+          <div className='text-[20px] pt-5'>
+          <Image src='/UntitledCA LOGO (1).png' width={70} height={50}/>
+
+          </div>
           <div className='text-[10px] py-4'>© 2024 Chadley Antonels</div>
 
         </div>
