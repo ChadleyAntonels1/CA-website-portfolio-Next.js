@@ -7,7 +7,7 @@ const Footer = () => {
     <div  className=" h-full flex items-center justify-between px-5 lg:px-8 xl:px-14 text-md border-t text-white"> 
         <div className=' '>
           <div className='text-[20px] pt-5'>
-          <Image src='/UntitledCA LOGO (1).png' width={70} height={50}/>
+          <Image src='/UntitledCA LOGO (1).png' width={70} height={50} alt='CA'/>
 
           </div>
           <div className='text-[10px] py-4'>© 2024 Chadley Antonels</div>
