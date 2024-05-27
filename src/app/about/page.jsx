@@ -102,7 +102,7 @@ const Aboutpage = () => {
                     <h1 className=' text-[14px] lg:text-[16px] text-violet font-bold mb-1'>Professional Experience</h1>
                     <h1 className='text-[12px] lg:text-[14px] font-semibold p-1 '>Web Developer | ALS Medical Trainning </h1>
                     <h1 className='text-[12px] lg:text-[14px] font-semibold '>Apr 2022 - Present</h1>
-                    <p className=' text-[10px] lg:text-[12px] font-extralight p-2 lg:p-4 '>web development, web design, Wireframes, Brand guidelines, logo design, and project management.</p>
+                    <p className=' text-[10px] lg:text-[12px] font-extralight p-2 lg:p-4 '>Web development, Web design, Wireframes, Brand guidelines, Logo design, Testing, SEO, Maintenance and Project management.</p>
                     
                     <h1 className='text-[12px] lg:text-[14px] font-semibold p-1'>Web Developer | CPUT</h1>
                     <h1 className='text-[12px] lg:text-[14px] font-semibold '>Jul 2023 - Dec 2023</h1>
@@ -121,15 +121,11 @@ const Aboutpage = () => {
                  <div className=" gap-4 rounded-lg h-auto w-[16rem] sm:w-[26rem] md:w-[35rem] lg:w-[44rem] xl:w-[60rem] grid grid-col-4 ">                      
  
                  <div className=" bg-zinc-950 rounded-lg h-auto grid items-center row-start-2 col-span-4 p-3">
-                    <h1 className=' text-[14px] lg:text-[16px] text-violet font-bold mb-1'>Professional Experience</h1>
+                    <h1 className=' text-[14px] lg:text-[16px] text-violet font-bold mb-1'>Project Experience</h1>
                     <h1 className='text-[12px] lg:text-[14px] font-semibold p-1'>Web Developer | RFF</h1>
-                    <h1 className='text-[12px] lg:text-[14px] font-semibold '>May 2023 - Dec 2023</h1>
-                    <p className=' text-[10px] lg:text-[12px] font-extralight p-2 lg:p-4'>web development, Wireframing, Brand, SEO and project management.</p>
+                    <h1 className='text-[12px] lg:text-[14px] font-semibold '>May 2024 - Present</h1>
+                    <p className=' text-[10px] lg:text-[12px] font-extralight p-2 lg:p-4'>Web development, Web design, Wireframing, Testing, SEO, Maintenance and Project management.</p>
                     
-                    <h1 className='text-[12px] lg:text-[14px] font-semibold p-1'>Web Developer | CPUT</h1>
-                    <h1 className='text-[12px] lg:text-[14px] font-semibold '>Jul 2023 - Dec 2023</h1>
-                    <p className=' text-[10px] lg:text-[12px] font-extralight p-2 lg:p-4'>WordPress development, Wireframes, Brand guidelines, logo design, 
-                    Communication and project management.</p>
                     </div>
                 </div>
                </motion.div>
