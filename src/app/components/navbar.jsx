@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import NavLink from "./navLink";
-import { AnimatePresence, motion, useCycle } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import Image from 'next/image';
 
 
@@ -96,7 +96,7 @@ const Navbar = () => {
         <div className=' lg:flex justify-start'> 
             <Link href='/' className='p-1 text-white font-semibold flex items-center justify-center'>
                 <div className=' text-[20px]'>
-                    <Image src='/UntitledCA LOGO (1).png' width={70} height={36}/>
+                    <Image src='/UntitledCA LOGO (1).png' width={70} height={36} alt='CA'/>
                 </div>
             </Link>
         </div>
@@ -154,6 +154,7 @@ const Navbar = () => {
                     <motion.a
                     whileHover={{ scale: 1.1 }}
                     variants={itemVariants}
+                    key={link.title}
                   >
                     <Link onClick={()=> setOpen(false)} href={link.url} key={link.title}>
                         <NavLink link={link} key={link.title}/>
