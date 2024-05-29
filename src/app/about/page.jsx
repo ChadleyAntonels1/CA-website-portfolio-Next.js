@@ -56,7 +56,7 @@ const Aboutpage = () => {
             <div className=" bg-zinc-950 rounded-lg h-auto grid items-center col-start- row-start-2 col-span-4 sm:col-span-3 sm:row-start-1 p-3">
               <h1 className='text-[14px] lg:text-[16px] text-violet font-bold mb-1'>Background</h1>
               <p className=' text-[10px] lg:text-[12px] font-light'>
-                As an inspired entry-level frontend web developer, I`m a driven creator with a passion for turning code into visually appealing interfaces. 
+                As an inspired frontend web developer, driven with a passion for turning code into visually appealing interfaces. 
                 I adapt easily to changes, using effective communication and creative problem-solving . 
                 I am passionate about driving results and making a meaningful impact, with a collaborative mindset and a commitment to continuous learning, I am eager to contribute my skills and 
                 insights to thrive in a dynamic and innovative environment. 
@@ -139,10 +139,10 @@ const Aboutpage = () => {
                                 className="mb-10 grid gap-6 justify-items-center items-center text-center pb-8 xl:pb-20 "> 
               <div className=" gap-4 rounded-lg h-auto w-[16rem] sm:w-[26rem] md:w-[35rem] lg:w-[44rem] xl:w-[60rem] grid grid-col-4 ">                      
                   <div className=" bg-zinc-950 rounded-lg h-auto grid items-center justify-items-center row-start-1 col-span-4 p-3">
-                  <h1 className=' text-[14px] lg:text-[16px] text-violet font-bold  '>Web Design</h1>
-                  <p className=' text-[10px] lg:text-[12px] font-extralight p-2 lg:p-4'> UX, UI design, Wireframing, prototyping, SEO</p>
-                  <h1 className=' text-[14px] lg:text-[16px] text-violet font-bold '>Brand development</h1>
-                  <p className=' text-[10px] lg:text-[12px] font-extralight p-2 lg:p-4'>Logo design, Brand guidelines, Brand stratergy and Digital Marketing Integration </p>
+                  <h1 className=' text-[14px] lg:text-[16px] text-violet font-bold  '>Front-End Development</h1>
+                  <p className=' text-[10px] lg:text-[12px] font-extralight p-2 lg:p-4'> HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS</p>
+                  <h1 className=' text-[14px] lg:text-[16px] text-violet font-bold '>Back-End Development</h1>
+                  <p className=' text-[10px] lg:text-[12px] font-extralight p-2 lg:p-4'>Node.js, Express.js and MongoDB.</p>
                  </div>
 
                  <div className=" bg-zinc-950 rounded-lg h-auto grid items-center row-start-1 col-span-4 p-3">

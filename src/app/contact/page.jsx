@@ -25,10 +25,10 @@ const Contactpage = () => {
 
 // download resume  
   const onButtonClick = () => {
-  const pdfUrl = "Chadley Antonels Frontend Web Developer Resume 2024.pdf";
+  const pdfUrl = "Chadley Antonels Frontend Developer Resume May 2024.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "Chadley Antonels Frontend Web Developer Resume 2024.pdf"; // specify the filename
+        link.download = "Chadley Antonels Frontend Developer Resume May 2024.pdf"; // specify the filename
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
