@@ -45,10 +45,10 @@ const Portfoliopage = () => {
                     </div>               
                   </Link>
                   <Link target='_blank'   
-                        href="https://expensetracker-chadleyantonels1s-projects.vercel.app/"
+                        href="https://chadleyantonels1.github.io/JS-todolist/"
                         className=' bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg h-auto grid justify-center col-start-3 row-start-2 col-span-2 p-3'>
                     <div className='grid justify-items-center py-5'>
-                        <Image src='/Untitledas.png' alt="" width={100} height={1000}  className="w-fill h-fill rounded-lg"/>
+                        <Image src='/Untitledtodo listapp.png' alt="" width={100} height={1000}  className="w-fill h-fill rounded-lg"/>
                       <h1 className=" text-violet font-extrabold text-[12px] lg:text-[14px] mt-2 py-5">
                           To-do List app
                       </h1>  
