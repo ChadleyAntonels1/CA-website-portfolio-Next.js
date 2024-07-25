@@ -37,7 +37,7 @@ const Aboutpage = () => {
                  <div className=" bg-zinc-950 rounded-lg h-auto grid items-center text-left col-start- row-start-2 col-span-4 sm:col-span-3 sm:row-start-1 p-3">
                     <h1 className=' text-[14px] lg:text-[16px] font-bold pt-'>Chadley Antonels</h1>
                     <h1 className=' text-[14px] lg:text-[16px] font-bold text-violet'>Frontend Web Developer</h1>
-                    <p className=' text-[10px] lg:text-[12px] text-white font-light p-1'>Ready to bring your ideas to life online? Let`s build your dream website together! 
+                    <p className=' text-[10px] lg:text-[12px] text-white font-light p-1'>Let`s build your dream website together! 
                       Whether you`re starting from scratch or looking to revamp your current site, I`m here to help. 
                       Contact me today to discuss your project and take the first step towards an impactful online presence.
                     </p> 

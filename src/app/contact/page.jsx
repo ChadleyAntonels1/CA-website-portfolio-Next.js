@@ -238,7 +238,9 @@ const Contactpage = () => {
                              placeholder=' Message' 
                              rows={8}
                              required/>
-                      <button className='w-[10rem] sm:w-[25rem] md:w-[28rem] lg:w-[35rem] xl:w-[38rem] bg-violet shadow-lg shadow-violet/50 text-white p-2 text-[12px] lg:text-[14px] font-semibold rounded-lg'>send</button>
+                      <button className='w-[10rem] sm:w-[25rem] md:w-[28rem] lg:w-[35rem] xl:w-[38rem] bg-violet shadow-lg shadow-violet/50 text-white p-2 text-[12px] lg:text-[14px] font-semibold rounded-lg'>
+                        send
+                      </button>
                       {success && (
                         <span className='text-white text-[10px] lg:text-[12px] font-semibold'>
                            Your message was sent successfully!

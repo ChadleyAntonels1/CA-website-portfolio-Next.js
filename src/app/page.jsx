@@ -59,13 +59,13 @@ const Homepage = () => {
                  <div className="bg-zinc-950 ring-zinc-900  rounded-lg w-[16rem] sm:w-[26rem] md:w-[35rem] lg:w-[44rem] xl:w-[60rem] grid grid-col-4 p-4 sm:p-10">
                   <div className="h-auto grid row-start-1 col-span-4">
                         <h1 className=" text-white font-extrabold text-[14px] lg:text-[16px] pb-4">
-                          Passionate Frontend Web Developer Creating Beautiful Websites
+                          Frontend Web Developer
                         </h1>
                   </div>               
                   <div className=" h-auto grid row-start-2 col-span-4 ">
                         <p className=" text-white font-regular text-[10px] lg:text-[12px] pb-8">
-                          With 2 years of project experience, I specialize in creating visually stunning and user-friendly websites. 
-                          My core competencies include HTML, CSS, JavaScript, and responsive design.
+                          I specialize in functional and responsive websites. 
+                          My core competencies include HTML, CSS, JavaScript, React.js, Next.js and Node.js .
                         </p>
                   </div>
                   <div className="h-auto grid justify-items-center col-span-4 ">
@@ -97,7 +97,7 @@ const Homepage = () => {
                                 viewport={{ once: true, amount: 0.8 }}
                                 className=" grid row-start-1 col-span-4 p-3 sm:p-10">
                     <h1 className=" text-violet font-extrabold text-[14px] lg:text-[16px] p-3">
-                    Step into my portfolio and explore a showcase of projects that reflect my dedication and expertise
+                    Step into my portfolio and explore a showcase of projects and freelancing
                     </h1>
                   </div>               
 
@@ -160,8 +160,6 @@ const Homepage = () => {
                             <Image src='/UntitledSCREENBLOG.png' alt="" width={400} height={100}  className="w-fill h-fill rounded-lg"/>
                     </CarouselItem>
                     </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
                   </Carousel>
                   <h1 className=" text-violet font-extrabold text-[12px] lg:text-[14px] p-5">
                        Blogging website
@@ -193,8 +191,8 @@ const Homepage = () => {
                   </div>               
 
                   <div className=" bg-zinc-950 ring-zinc-900  rounded-lg h-auto grid col-start-1 row-start-2 col-span-2 p-3">
-                        <p className=" text-white font-regular text-start text-[10px] lg:text-[12px] mb-8 ">
-                        Open the Door to Possibilities, Reach Out and Let`s Collaborate on Your Vision!                        
+                        <p className=" text-white font-regular text-start text-[10px] lg:text-[12px] mb-8 md:mb-12 ">
+                        Reach Out and Let`s Collaborate on Your Vision!                        
                         </p>
                         <div className="h-auto grid justify-items-start ">
                           <Link className="bg-violet text-white font-regular grid items-center justify-center text-xs w-[30px] h-[30px] rounded-lg" 
@@ -206,7 +204,7 @@ const Homepage = () => {
 
                  <div className=" bg-zinc-950 ring-zinc-900  rounded-lg h-auto grid col-start-3 row-start-2 col-span-2 p-3 ">
                         <p className=" text-white font-regular text-start text-[10px] lg:text-[12px] mb-8 ">
-                          With 2 years of experience, I specialize in creating visually stunning and user-friendly websites.
+                          I specialize in creating responsive and user-friendly websites.
                         </p>
                         <div className="h-auto grid justify-items-start ">
                           <Link className="bg-violet text-white font-regular grid items-center justify-center w-[30px] h-[30px] rounded-lg" 
