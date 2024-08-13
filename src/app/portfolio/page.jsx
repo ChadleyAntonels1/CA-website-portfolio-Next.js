@@ -112,7 +112,7 @@ const Portfoliopage = () => {
               <div className=" grid gap-6 justify-items-center items-center text-center py-8 xl:py-20">
                  <div className=" text-center gap-4 mt-4 rounded-lg w-[16rem] sm:w-[26rem] md:w-[35rem] lg:w-[44rem] xl:w-[60rem] grid grid-col-4 justify-center">
                  <Link target='_blank' 
-                       href="https://next14-starter-two.vercel.app/" 
+                       href="https://als-medical-training.vercel.app/" 
                        className="bg-black ring-zinc-900 ring-2 ring-opacity-25 rounded-lg grid row-start-1 col-span-4 p-3 sm:p-10">
                  <Carousel  plugins={[plugin.current]}>
                     <CarouselContent className=''>
